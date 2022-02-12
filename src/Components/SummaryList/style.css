@@ -8,15 +8,15 @@
     color: rgb(130,130,132);
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+}
+
+.summary-list thead th span {
+    font-size: 18px;
 }
 
 
 .summary-list tbody tr {
-    height: 40px;
-}
-
-.summary-list tbody td {
-    font-weight: bold;
     font-size:13px;
     text-align: center;
 }
@@ -31,3 +31,4 @@
     color: rgb(130,130,132);
     margin-left: 2px;
 }
+
