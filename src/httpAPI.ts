@@ -23,3 +23,9 @@ export const httpGetSummary = async (): Promise<SummaryType> => {
     cities: Object.values(cities)
   };
 };
+
+export const httpGetVaccineSummary = async () : Promise<VaccineSummaryType> => {
+  const {data} = await httpClient.get('/korea/vaccine/');
+
+  return data.korea
+}
