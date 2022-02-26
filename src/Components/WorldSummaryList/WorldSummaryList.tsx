@@ -7,7 +7,7 @@ interface Props {
     summary?: WorldSummaryType
 }
 
-const SummaryList: FunctionComponent<Props> = props => {
+const WorldSummaryList: FunctionComponent<Props> = props => {
 
     const [sortOption, setSortOption] = useState<{
         key: keyof WorldSummaryType['Countries'][0]
@@ -90,4 +90,4 @@ const SummaryList: FunctionComponent<Props> = props => {
     )
 }
 
-export default SummaryList
+export default WorldSummaryList

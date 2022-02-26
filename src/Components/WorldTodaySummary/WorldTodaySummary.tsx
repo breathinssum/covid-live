@@ -7,7 +7,7 @@ interface Props {
   summary?: WorldSummaryType
 }
 
-const TodaySummary: FunctionComponent<Props> = ({summary}) => {
+const WorldTodaySummary: FunctionComponent<Props> = ({summary}) => {
   return (
     <Box isPadding>
       <article className="today-summary">
@@ -32,4 +32,4 @@ const TodaySummary: FunctionComponent<Props> = ({summary}) => {
   );
 };
 
-export default TodaySummary;
+export default WorldTodaySummary;

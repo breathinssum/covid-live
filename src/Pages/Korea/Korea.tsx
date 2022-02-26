@@ -1,8 +1,9 @@
 import { useState, useCallback, useEffect } from "react";
-import Summary from "../../Components/Summary"
+import Summary from "../../Components/Summary";
 import SummaryList from "../../Components/SummaryList";
-import TodaySummary from "../../Components/TodaySummary"
+import TodaySummary from "../../Components/TodaySummary";
 import { httpGetSummary } from "../../httpAPI";
+
 
 
 const Korea = ( ) => {
