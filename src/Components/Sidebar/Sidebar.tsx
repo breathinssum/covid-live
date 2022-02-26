@@ -15,9 +15,10 @@ const Sidebar = () => {
       </Box>
       <Box>
         <nav>
-          <ul>
+          <ul> //리액트라우터의 link컴포넌트로 클릭시 to의 path로 라우터 이동
+            //=페이지 이동
             <NavLink
-              to="/"
+              to="/" // 현재 페이지의 path와 컴포넌트의 to path값이 일치하면 isActive == true 이므로 selected 클래스 추가
               className={({ isActive }) => (isActive ? 'selected' : '')}
             >
               <li>국내</li>

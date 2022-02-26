@@ -5,7 +5,8 @@ import Box from "../Box";
 import "./style.css";
 
 interface Props {
-  summary?: SummaryType
+  summary?: SummaryType //? 는 optional값으로 값이 있을 수도 없을 수도 있는 경우에 사용
+  //API 요청 시점에서 불러오는 시간이 있기 때문에 초기값이 없는 경우로 ?을 사용함
 }
 
 const Summary: FunctionComponent<Props> = ({summary}) => {
@@ -17,10 +18,12 @@ const Summary: FunctionComponent<Props> = ({summary}) => {
             <div className="title">확진</div>
             <div
               className="count"
+              //리액트에서 스타일 지정하는 방법 중 inline-style 구문
               style={{
                 color: "rgb(235, 83, 116)",
               }}
             >
+              //숫자에 천단위로 콤마를 찍어주는 유틸함수
               {formatNumber(summary?.totalCnt)}
             </div>
             <span>{formatNumber(summary?.incDec)}</span>

@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Sidebar />
       <section>
-        <Routes>
-          <Route path="/" element={<Korea />} />
+        <Routes> //라우터 설정 : path 브라우저 path에 따라 변경되는 페이지
+          <Route path="/" element={<Korea />} /> 
           <Route path="/world" element={<World />} />
           <Route path="/vaccine" element={<Vaccine />} />
         </Routes>
