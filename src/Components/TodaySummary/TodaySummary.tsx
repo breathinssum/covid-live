@@ -4,7 +4,7 @@ import Box from "../Box";
 import "./style.css";
 
 interface Props {
-    summary?:SummaryType
+  summary?: SummaryType
 }
 
 const TodaySummary: FunctionComponent<Props> = ({summary}) => {
@@ -12,25 +12,21 @@ const TodaySummary: FunctionComponent<Props> = ({summary}) => {
     <Box isPadding>
       <article className="today-summary">
         <div className="left">
-        <dl>
-          <dt>오늘 확진자</dt>
-          <dd>{formatNumber(summary?.incDec)}명</dd>
-          {/* 전날 대비 */}
-          {/* 해외 유입, 지역 발생 */}
-        </dl>
+          <dl>
+            <dt>오늘 확진자</dt>
+            <dd>{formatNumber(summary?.incDec)}명</dd>
+          </dl>
         </div>
-
         <div className="right">
-            <dl>
-                <dt>지역 발생</dt>
-                <dd>{formatNumber(summary?.incDecK)}명</dd>
-            </dl>
-            <dl>
-                <dt>해외 유입</dt>
-                <dd>{formatNumber(summary?.incDecF)}명</dd>
-            </dl>
+          <dl>
+            <dt>지역 발생</dt>
+            <dd>{formatNumber(summary?.incDecK)}</dd>
+          </dl>
+          <dl>
+            <dt>해외 유입</dt>
+            <dd>{formatNumber(summary?.incDecF)}</dd> 
+          </dl>
         </div>
-       
       </article>
     </Box>
   );

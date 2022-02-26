@@ -5,11 +5,10 @@ import Box from "../Box";
 import "./style.css";
 
 interface Props {
- summary?: SummaryType
+  summary?: SummaryType
 }
 
 const Summary: FunctionComponent<Props> = ({summary}) => {
-
   return (
     <Box isPadding>
       <article className="summary">

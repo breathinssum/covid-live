@@ -9,10 +9,8 @@
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    position :relative;
+    position: relative;
 }
-
-
 
 .summary-list tbody tr {
     height: 40px;

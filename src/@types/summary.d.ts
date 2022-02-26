@@ -38,4 +38,5 @@ interface WorldSummaryType {
     TotalDeaths: number
     TotalRecovered: number
   }[]
+
 }
